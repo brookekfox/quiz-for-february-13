@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @movie.title %></h1>
+
+<div class="body-text">
+	You saw <%= @movie.title %> on <%= @movie.saw_on %>. You rated it <%= @movie.rating %> out of 10!
+</div>
+
+<div class="links"
+	<%= link_to 'Edit this movie', edit_movie_path(@movie) %><br>
+	<%= link_to 'Back to the main list', movies_path %>
+</div>

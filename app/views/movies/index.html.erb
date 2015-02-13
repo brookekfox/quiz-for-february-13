@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Movies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Rating</th>
+			<th>Actions</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movies.sort_by { |m| m[:title] }.each do |movie| %>
+      <tr>
+        <td class="sans"><%= movie.title %></td>
+        <td class="sans"><%= movie.saw_on %></td>
+        <td class="sans"><%= movie.rating %></td>
+        <td class="sans"><%= link_to 'Show', movie %>
+            <%= link_to 'Edit', edit_movie_path(movie) %>
+            <%= link_to 'Delete', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div class="links">
+	<%= link_to 'New Movie', new_movie_path %><br>
+	<%= link_to 'Show the highly rated movies', movies_path(show_high: true) %><br>
+	<%= link_to 'Show the low rated movies', movies_path(show_low: true) %><br>
+	<%= link_to 'Full list', movies_path %>
+</div>

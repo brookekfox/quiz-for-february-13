@@ -1,0 +1,71 @@
+// Place all the styles related to the movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+$head-font: 'Lobster', cursive;
+$body-font: 'Oswald', sans-serif;
+$head-size: 42pt;
+$body-size: 18pt;
+
+
+table {
+  border: 4px double darkblue;
+  border-radius: 10px;
+  width: 80%;
+  padding: 2%;
+  background-color: rgba(240,240,240,.4);
+}
+th {
+  text-align: left;
+  width: 200px;
+  font-family: $head-font;
+  font-size: 32pt;
+  color: darkblue;
+}
+td {
+  text-align: left;
+  width: 200px;
+  font-family: $body-font;
+  font-size: $body-size;
+  height: 50px;
+  color: darkblue;
+}
+.links {
+  border: 4px double darkblue;
+  border-radius: 10px;
+  width: 25%;
+  padding: 2%;
+  font-family: $body-font;
+  font-size: 14pt;
+  color: darkblue;
+  background-color: rgba(240,240,240,.4);
+}
+h1 {
+  font-family: $head-font;
+  font-size: $head-size;
+  color: #f0f0f0;
+}
+.sans {
+  font-family: $body-font;
+  font-size: $body-size;
+  color: darkblue;
+}
+.body-text {
+  font-family: $body-font;
+  font-size: $body-size;
+  border: 4px double darkblue;
+  border-radius: 10px;
+  width: 50%;
+  margin: 10% auto;
+  padding: 2%;
+  color: darkblue;
+  background-color: rgba(240,240,240,.4);
+}
+body {
+  background: url('https://ununsplash.imgix.net/photo-1414604582943-2fd913b3cb17?q=75&fm=jpg&s=f446e822ccd1b4608242cad57d747769');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(50px);
+  color: darkblue;
+}
